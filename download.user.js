@@ -6,7 +6,7 @@
 // @match        /\:\/\/.*.bili.*\/play\/.*$/
 // @include      /\:\/\/.*.bili.*\/play\/.*$/
 // @icon         https://www.google.com/s2/favicons?domain=biliintl.com
-// @updateURL    https://github.com/AdvMaple/biliint.com-bilibili.tv_subtitle_download_plugin/raw/main/download.user.js
+// @updateURL    https://github.com/leonguyen52/biliint.com-bilibili.tv_subtitle_download_plugin/raw/main/download.user.js
 // @grant        GM_addStyle
 // @require      http://code.jquery.com/jquery-3.6.0.min.js
 
@@ -17,7 +17,7 @@ CHANGE SUB_LANGUAGE to:
 "en" for English
 "th" สำหรับภาษาไทย
 "zh-Hans" 为简体中文
-"vi" cho người việt nam
+"vi" Tiếng Việt
 "id" untuk Bahasa Indonesia
 "ms" untuk Bahasa Melayu
 */
@@ -50,8 +50,8 @@ CHANGE SUB_LANGUAGE to:
   let sub_format = localStorage.getItem("SUB_FORMAT");
   let selectedQuality = localStorage.getItem("VIDEO_QUALITY");
   if (!sub_language) {
-    localStorage.setItem("SUB_LANGUAGE", "th");
-    sub_language = 'th';
+    localStorage.setItem("SUB_LANGUAGE", "vi");
+    sub_language = 'vi';
   }
   if (!sub_format) {
     localStorage.setItem("SUB_FORMAT", "srt");
